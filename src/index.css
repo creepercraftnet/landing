@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black text-white;
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  }
+}
+
+/* Prevent image dragging */
+img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Prevent text selection */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Navigation Link */
+.nav-link {
+  @apply relative py-2 text-sm font-medium transition-colors duration-200;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-0 h-0.5 bg-[#ffd700] transition-all duration-200;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.nav-link:hover {
+  @apply text-[#ffd700];
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  .nav-link {
+    @apply block w-full py-3 px-4 text-lg;
+  }
+
+  .nav-link::after {
+    @apply w-0 h-0.5 bg-[#ffd700];
+    transition: width 0.2s ease;
+  }
+
+  .nav-link:hover::after {
+    @apply w-1/4;
+  }
+}
+
+/* Coming Soon Button */
+.coming-soon-btn {
+  position: relative;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin: 10px 0;
+  background: transparent;
+}
+
+.coming-soon-btn:hover {
+  color: #050801;
+  background: #ffd700;
+  box-shadow: 0 0 5px #ffd700,
+              0 0 25px #ffd700,
+              0 0 50px #ffd700,
+              0 0 200px #ffd700;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.coming-soon-btn span {
+  position: absolute;
+}
+
+.coming-soon-btn span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd700);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+.coming-soon-btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffd700);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+
+.coming-soon-btn span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffd700);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+
+.coming-soon-btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffd700);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+/* CreeperHUB Link */
+.creeperhub-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.creeperhub-link:hover {
+  background: linear-gradient(45deg, #2a2a2a, #3a3a3a);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* 404 Page Button */
+.button-404 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  color: #ffd700;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.button-404:hover {
+  background: #ffd700;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* FontAwesome Icon styles */
+.svg-inline--fa {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.social-icon:hover {
+  transform: scale(1.1) rotate(6deg);
+  color: #ffd700;
+}
