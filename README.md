@@ -1,6 +1,3 @@
-Here's an updated `README.md` for your Creepercraft landing page repository, incorporating both the "AD" (advertisement) and installation instructions, utilizing GitHub's special blockquotes:
-
-````markdown
 # Creepercraft: A New Minecraft Adventure Awaits!
 
 ## 🚀 Coming Soon! 🚀
