@@ -66,8 +66,8 @@ Follow these steps to get a local copy up and running:
     npm run build
     ```
 
-    >[!NOTE]
-    >This command will compile and optimize all the project files (HTML, CSS, JavaScript, images, etc.) into a `dist/` directory (or similar, depending on your build configuration). This `dist/` directory contains the static files ready for deployment.
+> [!NOTE]
+> This command will compile and optimize all the project files (HTML, CSS, JavaScript, images, etc.) into a `dist/` directory (or similar, depending on your build configuration). This `dist/` directory contains the static files ready for deployment.
 
 ### Deployment
 
@@ -82,10 +82,10 @@ The `dist/` directory (generated after `npm run build`) is what you will deploy 
 * **Other Static Site Hosts:**
     The `dist/` folder can be deployed to any static site hosting service (e.g., Vercel, Firebase Hosting, Apache/Nginx static file serving, etc.) by simply uploading its contents.
 
->[!IMPORTANT]
->Always run `npm run build` before deploying to ensure you have the latest optimized production-ready files.
+> [!IMPORTANT]
+> Always run `npm run build` before deploying to ensure you have the latest optimized production-ready files.
 
 ---
 
 #Creepercraft #Minecraft #Gaming #Community #WebDevelopment #LandingPage #OpenSource
-````
+
