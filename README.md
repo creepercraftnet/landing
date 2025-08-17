@@ -14,7 +14,7 @@ Join the Creepercraft adventure and let your imagination run wild!
 
 ### Stay Updated:
 
-* **Join our Discord:** Be the first to know about the server launch, get exclusive sneak peeks, and connect with other players. [Discord Link](https://dc.gg/hub)
+* **Join our Discord:** Be the first to know about the server launch, get exclusive sneak peeks, and connect with other players. [Discord Link](https://creeperhub.net/discord)
 * **Follow us on Social Media:** Stay tuned for the latest news, updates, and community highlights.
     * [Twitter(X) Link](https://x.com/creepercraftfun)
     * [Facebook Link](https://fb.com/creepercraft)
@@ -38,8 +38,8 @@ Follow these steps to get a local copy up and running:
     You can download the repository as a ZIP file or clone it using Git:
 
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-    cd YOUR_REPOSITORY_NAME
+    git clone https://github.com/creepercraftnet/landing.git
+    cd landing
     ```
 
     *If you downloaded the ZIP, simply unzip it to your desired directory.*
@@ -88,4 +88,5 @@ The `dist/` directory (generated after `npm run build`) is what you will deploy 
 ---
 
 #Creepercraft #Minecraft #Gaming #Community #WebDevelopment #LandingPage #OpenSource
+
 
