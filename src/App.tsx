@@ -102,28 +102,24 @@ function MainContent() {
                 icon={<FontAwesomeIcon icon={faGlobe} className="text-xl" />}
               />
               <SocialLink
-                href="https://discord.gg/Ttyg95fszY"
+                href="/discord"
                 icon={<FontAwesomeIcon icon={faDiscord} className="text-xl" />}
               />
               <SocialLink
-                href="https://github.com/creepercraftoff"
+                href="https://github.com/creepercraftnet"
                 icon={<FontAwesomeIcon icon={faGithub} className="text-xl" />}
               />
               <SocialLink
-                href="https://twitter.com/creepercraftoff"
+                href="https://twitter.com/creepercraftnet"
                 icon={<FontAwesomeIcon icon={faXTwitter} className="text-xl" />}
               />
               <SocialLink
-                href="https://youtube.com/@creepercraftoff"
+                href="https://youtube.com/@creepercraftnet"
                 icon={<FontAwesomeIcon icon={faYoutube} className="text-xl" />}
               />
               <SocialLink
-                href="https://twitch.tv/creepercraftoff"
+                href="https://twitch.tv/creepercraftnet"
                 icon={<FontAwesomeIcon icon={faTwitch} className="text-xl" />}
-              />
-              <SocialLink
-                href="https://tiktok.com/@creepercraftoff"
-                icon={<FontAwesomeIcon icon={faTiktok} className="text-xl" />}
               />
             </div>
           </div>
