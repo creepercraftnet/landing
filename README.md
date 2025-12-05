@@ -38,7 +38,7 @@ Follow these steps to get a local copy up and running:
     You can download the repository as a ZIP file or clone it using Git:
 
     ```bash
-    git clone https://github.com/creepercraftnet/landing.git
+    git clone https://github.com/creepercraftnet/creepercraftnet.github.io.git
     cd landing
     ```
 
@@ -88,6 +88,7 @@ The `dist/` directory (generated after `npm run build`) is what you will deploy 
 ---
 
 #Creepercraft #Minecraft #Gaming #Community #WebDevelopment #LandingPage #OpenSource
+
 
 
 
